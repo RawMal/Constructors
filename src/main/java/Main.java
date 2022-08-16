@@ -7,7 +7,14 @@ public class Main {
         String myName = myAccount.getName();
         int myBalance = myAccount.getBalance();
 
-        
+        System.out.println(myAccount);
+        System.out.println(myAccount.getID());
+        System.out.println(myAccount.getName());
+        System.out.println(myAccount.getBalance());
+
+
+
+
 
     }
 }

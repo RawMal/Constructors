@@ -6,7 +6,7 @@ public class Account {
     public Account(String ID, String Name, int Balance) {
         this.ID = ID;
         this.Name = Name;
-        this.Balance = 0;
+        this.Balance = Balance;
 
     }
 
