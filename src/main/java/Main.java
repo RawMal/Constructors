@@ -25,6 +25,16 @@ public class Main {
         System.out.println("The Circle's Circumference is: "+ myCircle.getCircumference());
 
 
+        //For the Rectangle
+        Rectangle myRectangle = new Rectangle(40, 20);
+        float myPerimeter = myRectangle.getPerimeter();
+        float myArea = myRectangle.getArea();
+        float myDiagonal = myRectangle.getDiagonal();
+
+        //Time to test
+
+
+
 
 
 

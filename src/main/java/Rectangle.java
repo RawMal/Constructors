@@ -3,10 +3,11 @@ public class Rectangle {
     float length;
     float width;
 
-    public Rectangle(float length) {
+    public Rectangle(float length, float width) {
         this.length = length;
         this.width = width;
     }
+
 
     // Rectangles Method
 
@@ -26,9 +27,14 @@ public class Rectangle {
     public void setWidth(float width) {
         this.width = width;
     }
-
+    // BEHAVIOURS
     public float getPerimeter() {
         return ((length + width) * 2);
     }
-    
+    public float getArea() {
+        return (length * width);
+    }
+    public float getDiagonal() {
+        return (float) (Math.sqrt(length) + Math.sqrt(width));
+    }
 }
