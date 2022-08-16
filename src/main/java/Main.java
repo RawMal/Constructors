@@ -12,6 +12,17 @@ public class Main {
         System.out.println(myAccount.getName());
         System.out.println(myAccount.getBalance());
 
+        //For the Circle
+        Circle myCircle = new Circle(2);
+        double myRadius = myCircle.getRadius();
+        double myCircumference = myCircle.getCircumference();
+        System.out.println("The Circle's Radius is: "+ myCircle.getRadius());
+        System.out.println("The Circle's Circumference is: "+ myCircle.getCircumference());
+
+        //New radius value experiment
+        
+
+
 
 
 
