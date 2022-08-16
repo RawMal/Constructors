@@ -32,6 +32,9 @@ public class Main {
         float myDiagonal = myRectangle.getDiagonal();
 
         //Time to test
+        System.out.println("The rectangle's perimeter = "+ myRectangle.getPerimeter());
+        System.out.println("The rectangle's area = "+ myRectangle.getArea());
+        System.out.println("The rectangle's Diagonal = "+ myRectangle.getDiagonal());
 
 
 

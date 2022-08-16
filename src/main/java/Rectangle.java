@@ -35,6 +35,6 @@ public class Rectangle {
         return (length * width);
     }
     public float getDiagonal() {
-        return (float) (Math.sqrt(length) + Math.sqrt(width));
+        return (float) (Math.pow(length, 2) + Math.pow(length, 2));
     }
 }
