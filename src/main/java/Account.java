@@ -36,5 +36,10 @@ public class Account {
         this.Balance = Balance;
     }
 
+// Over riding the toString() method
+@Override
+public String toString() {
+    return "Account{" + "ID='" + ID + ", Name ='" + Name + ", Balance=" + Balance + '}';
+}
 
 }
