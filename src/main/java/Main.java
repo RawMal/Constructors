@@ -20,7 +20,11 @@ public class Main {
         System.out.println("The Circle's Circumference is: "+ myCircle.getCircumference());
 
         //New radius value experiment
-        
+        myCircle.setRadius(18);
+        System.out.println("The Circle's Radius is: "+ myCircle.getRadius());
+        System.out.println("The Circle's Circumference is: "+ myCircle.getCircumference());
+
+
 
 
 
