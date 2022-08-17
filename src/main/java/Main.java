@@ -36,6 +36,16 @@ public class Main {
         System.out.println("The rectangle's area = "+ myRectangle.getArea());
         System.out.println("The rectangle's Diagonal = "+ myRectangle.getDiagonal());
 
+        //For the Customer
+        Customer lloyd = new Customer("Lloyd", "Banks", 1200);
+        System.out.println(" Full Name: "+lloyd.getfirstLastName() );
+        System.out.println(" Account Balance: "+lloyd.getHeldMoney());
+
+        //time to test
+        
+
+
+
 
 
 

@@ -9,7 +9,7 @@ public class Customer {
 
     Random random = new Random();
 
-    public Customer(int id, String firstName, String lastName, double heldMoney) {
+    public Customer(String firstName, String lastName, double heldMoney) {
         this.id = (int) random.nextInt(500);
         this.firstName = firstName;
         this.lastName = lastName;
@@ -48,16 +48,15 @@ public class Customer {
         this.heldMoney = heldMoney;
     }
 
-    public String toString() {
-        return "Customer{" +
-                "id=" + id +
-                ", firstName='" + firstName +
-                ", lastName='" + lastName +
-                ", heldMoney=" + heldMoney +
-                '}';
+    public void subtractHeldMoney(double deduction) {
+        setHeldMoney(heldMoney - deduction);
+    }
+    public String getfirstLastName() {
+        return firstName+" "+lastName;
+
+    }
     }
 
 
 
 
-}
