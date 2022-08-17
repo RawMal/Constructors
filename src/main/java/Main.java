@@ -42,15 +42,8 @@ public class Main {
         System.out.println(" Account Balance: "+lloyd.getHeldMoney());
 
         //time to test
-        
-
-
-
-
-
-
-
-
+        lloyd.subtractHeldMoney(350);
+        System.out.println("Account Balance after withdrawal :"+lloyd.getHeldMoney());
 
 
 
