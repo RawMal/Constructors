@@ -53,12 +53,22 @@ public class Main {
         System.out.println("Account Balance after withdrawal :"+lloyd.getHeldMoney());
         System.out.println("Account ID request: "+lloyd.getId());
 
-        //Tying Account to Customer
+        //Tying Account to Customer// Allowing user input
         System.out.println("Please enter your Customer's first name: ");
         String firstName = scanner.nextLine();
 
         System.out.println("Please enter your Customer's last name: ");
         String lastName = scanner.nextLine();
+
+        Customer_Ex newCustomer = new Customer_Ex(firstName,lastName);
+
+        System.out.println(newCustomer.toString());
+
+
+        // creating new customer account
+
+
+
 
 
 
