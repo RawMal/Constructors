@@ -1,10 +1,11 @@
 import java.sql.SQLOutput;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
         //import scanner for tying customer to account
-        S
+        Scanner scanner = new Scanner(System.in);
 
 
         Account myAccount = new Account("1", "Bond", 700);
@@ -53,6 +54,13 @@ public class Main {
         System.out.println("Account ID request: "+lloyd.getId());
 
         //Tying Account to Customer
+        System.out.println("Please enter your Customer's first name: ");
+        String firstName = scanner.nextLine();
+
+        System.out.println("Please enter your Customer's last name: ");
+        String lastName = scanner.nextLine();
+
+
 
 
 
