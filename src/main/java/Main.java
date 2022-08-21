@@ -1,8 +1,14 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
-    }
+
+        //import scanner for tying customer to account
+        S
+
 
         Account myAccount = new Account("1", "Bond", 700);
+
         String myId = myAccount.getID();
         String myName = myAccount.getName();
         int myBalance = myAccount.getBalance();
@@ -31,7 +37,7 @@ public class Main {
         float myArea = myRectangle.getArea();
         float myDiagonal = myRectangle.getDiagonal();
 
-        //Time to test
+        //Time to check
         System.out.println("The rectangle's perimeter = "+ myRectangle.getPerimeter());
         System.out.println("The rectangle's area = "+ myRectangle.getArea());
         System.out.println("The rectangle's Diagonal = "+ myRectangle.getDiagonal());
@@ -41,12 +47,15 @@ public class Main {
         System.out.println(" Full Name: "+lloyd.getfirstLastName() );
         System.out.println(" Account Balance: "+lloyd.getHeldMoney());
 
-        //time to test
+        //time to check
         lloyd.subtractHeldMoney(350);
         System.out.println("Account Balance after withdrawal :"+lloyd.getHeldMoney());
         System.out.println("Account ID request: "+lloyd.getId());
 
+        //Tying Account to Customer
+
+
 
 
     }
-}
+    }
