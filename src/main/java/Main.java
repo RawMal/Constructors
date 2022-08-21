@@ -73,7 +73,44 @@ public class Main {
         System.out.println(newAccount);
 
         //Adding While loop to add and subtract from balance
-        
+        Boolean appOperating = true;
+
+        while (appOperating){
+            System.out.println("How can we help? Would you like to DEPOSIT/TRANSFER/EXIT ?");
+            String input = scanner.nextLine();
+
+            switch (input.toLowerCase()) {
+                case "exit": {
+                    appOperating = false;
+                    break;
+                }
+                case "deposit": {
+                    System.out.println("How much would you like to deposit into your account?");
+                    if (scanner.hasNextInt()) {
+                        int toAdd = scanner.nextInt();
+                        scanner.nextLine();
+                        newAccount.addAccBalance(toAdd);
+                        System.out.println("Your new account balance is: " + newAccount.getAccBalance());
+                    } else {
+                        //Correcting user if they add a string value/type words instead of numbers
+                        System.out.println("Please input a valid number");
+                    }
+                    break;
+                }
+                case "transfer": {
+                    System.out.println("How much would you like to transfer from your account?");
+                    if (scanner.hasNextInt()) {
+                        int toSubtract = scanner.nextInt();
+                        scanner.nextLine();
+                        newAccount.subtractAccBalance(toSubtract);
+                        System.out.println("Your new account balance is: " + newAccount.getAccBalance());
+                    } else {
+                        System.out.println("Please input a valid number");
+                    }
+                    break;
+                }
+            }
+        }
 
 
 
