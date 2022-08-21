@@ -53,6 +53,8 @@ public class Main {
         System.out.println("Account Balance after withdrawal :"+lloyd.getHeldMoney());
         System.out.println("Account ID request: "+lloyd.getId());
 
+
+
         //Tying Account to Customer// Allowing user input
         System.out.println("Please enter your Customer's first name: ");
         String firstName = scanner.nextLine();
@@ -64,8 +66,16 @@ public class Main {
 
         System.out.println(newCustomer.toString());
 
+        //Creating new customer account
+        Account_Ex newAccount = new Account_Ex("1",newCustomer,600);
 
-        // creating new customer account
+        System.out.println("New account created: ");
+        System.out.println(newAccount);
+
+        //Adding While loop to add and subtract from balance
+        
+
+
 
 
 
