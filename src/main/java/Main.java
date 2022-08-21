@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-
+    }
 
         Account myAccount = new Account("1", "Bond", 700);
         String myId = myAccount.getID();
@@ -44,6 +44,7 @@ public class Main {
         //time to test
         lloyd.subtractHeldMoney(350);
         System.out.println("Account Balance after withdrawal :"+lloyd.getHeldMoney());
+        System.out.println("Account ID request: "+lloyd.getId());
 
 
 
